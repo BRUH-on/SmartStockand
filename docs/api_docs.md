@@ -1,7 +1,7 @@
 # StockSmart: REST API Documentation
 
 Base URL (Local): `http://127.0.0.1:8000/api`  
-Base URL (Render Production): `https://stocksmart-backend.onrender.com/api`
+Base URL (Render Production): `https://smartstockand.onrender.com/api`
 
 ---
 

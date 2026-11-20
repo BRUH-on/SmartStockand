@@ -56,7 +56,7 @@ StockSmart is pre-configured with `render.yaml` and `backend/build.sh` for one-c
    | `PYTHON_VERSION` | `3.13.0` | Target runtime |
 5. Click **"Create Web Service"**.
 6. When deployment finishes, test the health check:
-   `https://stocksmart-backend.onrender.com/api/health/` -> should return `{"status": "ok"}`.
+   `https://smartstockand.onrender.com/api/health/` -> should return `{"status": "ok"}`.
 
 ---
 
@@ -68,7 +68,7 @@ StockSmart includes `.github/workflows/deploy.yml` which automatically builds an
    - On GitHub, go to your repository **Settings** -> **Secrets and variables** -> **Actions**.
    - Click **"New repository secret"**.
    - Name: `VITE_API_BASE_URL`
-   - Value: `https://stocksmart-backend.onrender.com/api` (replace with your Render backend URL).
+   - Value: `https://smartstockand.onrender.com/api` (replace with your Render backend URL).
 2. **Enable GitHub Pages**:
    - Go to repository **Settings** -> **Pages**.
    - Under **Build and deployment** -> **Source**, select **"GitHub Actions"**.
