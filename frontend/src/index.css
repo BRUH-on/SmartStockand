@@ -157,6 +157,7 @@ h1, h2, h3, h4, h5, h6 {
 .main-content {
   margin-left: 260px;
   flex: 1;
+  min-width: 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -165,6 +166,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .page-body {
   flex: 1;
+  min-width: 0;
   padding: 2rem;
 }
 
@@ -707,9 +709,12 @@ h1, h2, h3, h4, h5, h6 {
    ============================================================ */
 .table-container {
   overflow-x: auto;
+  min-width: 0;
+  max-width: 100%;
   border-radius: var(--radius-xl);
   border: 1.5px solid var(--border);
   box-shadow: var(--shadow-xs);
+  -webkit-overflow-scrolling: touch;
 }
 
 table.data-table {
@@ -1158,6 +1163,109 @@ table.data-table {
 
 .page-header-left { display: flex; flex-direction: column; gap: 0.2rem; }
 .page-header-right { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
+
+.responsive-data-page {
+  width: 100%;
+  min-width: 0;
+}
+
+.responsive-data-page .filter-bar > div,
+.responsive-data-page .search-bar {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.responsive-data-page .filter-bar .form-select {
+  width: 100%;
+}
+
+.responsive-data-table {
+  table-layout: fixed;
+}
+
+.responsive-data-table thead th {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.responsive-data-table tbody td {
+  overflow-wrap: anywhere;
+}
+
+.supplier-page .responsive-data-table th:nth-child(1) { width: 23%; }
+.supplier-page .responsive-data-table th:nth-child(2) { width: 17%; }
+.supplier-page .responsive-data-table th:nth-child(3) { width: 24%; }
+.supplier-page .responsive-data-table th:nth-child(4) { width: 12%; }
+.supplier-page .responsive-data-table th:nth-child(5) { width: 11%; }
+.supplier-page .responsive-data-table th:nth-child(6) { width: 13%; }
+
+.inventory-page .responsive-data-table th:nth-child(1) { width: 19%; }
+.inventory-page .responsive-data-table th:nth-child(2) { width: 20%; }
+.inventory-page .responsive-data-table th:nth-child(3) { width: 15%; }
+.inventory-page .responsive-data-table th:nth-child(4) { width: 15%; }
+.inventory-page .responsive-data-table th:nth-child(5) { width: 14%; }
+.inventory-page .responsive-data-table th:nth-child(6) { width: 17%; }
+
+@media (max-width: 1100px) {
+  .responsive-data-page .table-container {
+    overflow: visible;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .responsive-data-page .responsive-data-table,
+  .responsive-data-page .responsive-data-table tbody {
+    display: block;
+    width: 100%;
+  }
+
+  .responsive-data-page .responsive-data-table thead {
+    display: none;
+  }
+
+  .responsive-data-page .responsive-data-table tbody tr {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 1rem;
+    margin-bottom: 0.85rem;
+    padding: 0.25rem 0.9rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+  }
+
+  .responsive-data-page .responsive-data-table tbody td {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 0;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid var(--border);
+    background: transparent;
+    overflow-wrap: anywhere;
+  }
+
+  .responsive-data-page .responsive-data-table tbody td::before {
+    content: attr(data-label);
+    margin-bottom: 0.2rem;
+    color: var(--text-muted);
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .responsive-data-page .responsive-data-table tbody td:last-child {
+    grid-column: 1 / -1;
+    border-bottom: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .responsive-data-page .responsive-data-table tbody tr {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
 
 /* ============================================================
    FILTER BAR

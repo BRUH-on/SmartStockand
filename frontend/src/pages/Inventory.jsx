@@ -87,7 +87,7 @@ export default function Inventory() {
   };
 
   return (
-    <div className="animate-slide-up">
+    <div className="animate-slide-up responsive-data-page inventory-page">
       <div className="page-header">
         <div className="page-header-left">
           <h1 className="page-title">Stock Levels & Locations</h1>
@@ -124,7 +124,7 @@ export default function Inventory() {
               )}
             </div>
 
-            <div style={{ minWidth: '180px' }}>
+            <div style={{ flex: '1 1 180px', minWidth: 0 }}>
               <select
                 className="form-select"
                 value={locationFilter}
@@ -169,7 +169,7 @@ export default function Inventory() {
             </div>
           ) : (
             <div className="table-container" style={{ border: 'none' }}>
-              <table className="data-table">
+              <table className="data-table responsive-data-table">
                 <thead>
                   <tr>
                     <th>Product / SKU</th>
@@ -186,28 +186,28 @@ export default function Inventory() {
                     const loc = item.location || {};
                     return (
                       <tr key={item.id}>
-                        <td>
+                        <td data-label="Product / SKU">
                           <div style={{ fontWeight: 700, color: 'var(--dark-roast)' }}>
                             {prod.name || item.product_name}
                           </div>
                           <span className="mono">{prod.sku || item.sku || 'N/A'}</span>
                         </td>
-                        <td>
+                        <td data-label="Warehouse / Store Location">
                           <div className="flex items-center gap-2">
                             <i className="bi bi-geo-alt-fill" style={{ color: 'var(--mocha)' }}></i>
                             <span>{loc.name || item.location_name || 'Primary Store'}</span>
                           </div>
                         </td>
-                        <td>
+                        <td data-label="Quantity On Hand">
                           <span className="num-highlight" style={{ fontSize: '1.1rem' }}>
                             {item.quantity} units
                           </span>
                         </td>
-                        <td>
+                        <td data-label="Safety Reorder Point">
                           <span className="text-muted">{item.reorder_point || 10} min</span>
                         </td>
-                        <td>{getStatusBadge(item.quantity, item.reorder_point)}</td>
-                        <td style={{ textAlign: 'right' }}>
+                        <td data-label="Status">{getStatusBadge(item.quantity, item.reorder_point)}</td>
+                        <td data-label="Actions" style={{ textAlign: 'right' }}>
                           <button
                             onClick={() => handleOpenAdjust(item)}
                             className="btn btn-secondary btn-sm"

@@ -80,7 +80,7 @@ export default function Suppliers() {
   });
 
   return (
-    <div className="animate-slide-up">
+    <div className="animate-slide-up responsive-data-page supplier-page">
       <div className="page-header">
         <div className="page-header-left">
           <h1 className="page-title">Supplier & Vendor Partners</h1>
@@ -145,7 +145,7 @@ export default function Suppliers() {
             </div>
           ) : (
             <div className="table-container" style={{ border: 'none' }}>
-              <table className="data-table">
+              <table className="data-table responsive-data-table">
                 <thead>
                   <tr>
                     <th>Vendor / Business Name</th>
@@ -159,23 +159,23 @@ export default function Suppliers() {
                 <tbody>
                   {filteredSuppliers.map((s) => (
                     <tr key={s.id}>
-                      <td>
+                      <td data-label="Vendor / Business Name">
                         <div style={{ fontWeight: 700, color: 'var(--dark-roast)' }}>{s.name}</div>
                         <span className="text-muted text-sm">{s.address || 'Address not provided'}</span>
                       </td>
-                      <td>
+                      <td data-label="Representative">
                         <span style={{ fontWeight: 600 }}>{s.contact_name || 'Contact not provided'}</span>
                       </td>
-                      <td>
+                      <td data-label="Contact Email">
                         <a href={`mailto:${s.email}`} style={{ color: 'var(--espresso)', textDecoration: 'none' }}>
                           {s.email || 'N/A'}
                         </a>
                       </td>
-                      <td>{s.phone || 'N/A'}</td>
-                      <td>
+                      <td data-label="Phone">{s.phone || 'N/A'}</td>
+                      <td data-label="Status">
                         <Badge variant="success">Active</Badge>
                       </td>
-                      <td style={{ textAlign: 'right' }}>
+                      <td data-label="Actions" style={{ textAlign: 'right' }}>
                         <button
                           onClick={() => handleOpenModal(s)}
                           className="btn btn-secondary btn-sm"
