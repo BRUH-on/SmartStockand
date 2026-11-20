@@ -1,0 +1,13 @@
+id,name,contact_person,email,phone,address,city,state,pincode,gstin,lead_time_days,rating,is_active
+1,Havells India Supply Corp,Alok Singhal,orders@havells-supply.in,+91 120 4771000,Plot 3 Sector 59 Industrial Area,Noida,Uttar Pradesh,201301,07AAACH1234F1Z5,5,4.80,true
+2,Tata Consumer Products Ltd,Manish Kulkarni,b2b@tataconsumer.com,+91 22 66658282,1 Bombay House Homi Mody Street,Mumbai,Maharashtra,400001,27AAACT0012E1ZQ,4,4.90,true
+3,Raymond Textile Mills Ltd,Gaurav Singhania,distribution@raymond.in,+91 22 40349999,Pokhran Road No 1 Jekegram,Thane,Maharashtra,400606,27AAACR1122D1ZV,7,4.60,true
+4,Boat Lifestyle Electronics,Sameer Mehta,partner@boat-lifestyle.com,+91 11 41188990,Unit 201 Okhla Industrial Estate Phase III,New Delhi,Delhi,110020,07AABCB9988G1ZX,6,4.75,true
+5,Prestige Home Appliances,Chandrashekhar Rao,orders@ttkprestige.com,+91 80 22217438,11th Floor Brigade Towers 135 Brigade Rd,Bengaluru,Karnataka,560025,29AAACT9876C1ZB,8,4.50,true
+6,Himalaya Wellness Company,Dr. Ramesh Bhatt,procure@himalayawellness.in,+91 80 67549999,Makali Nelamangala Taluk,Bengaluru,Karnataka,562123,29AAACH4567B1ZM,5,4.65,true
+7,Godrej Consumer Products,Siddharth Godrej,b2b.godrej@godrej.com,+91 22 25188010,Pirojshanagar Eastern Express Highway Vikhroli,Mumbai,Maharashtra,400079,27AAACG1829L1Z2,4,4.85,true
+8,SG Cricket Equipment Co,Virender Anand,wholesale@sgcricket.com,+91 121 2402123,Suraj Kund Sports Complex Victoria Park,Meerut,Uttar Pradesh,250001,09AAACS3344A1ZZ,9,4.40,true
+9,Classmate ITC Stationery,Sujit Sengupta,classmate.orders@itc.in,+91 33 22889371,Virginia House 37 JL Nehru Road,Kolkata,West Bengal,700071,19AAACI2233M1ZP,3,4.70,true
+10,FabIndia Overseas Pvt Ltd,Sunita Oberoi,supply@fabindia.net,+91 11 40692000,Plot 14 Okhla Industrial Area Phase III,New Delhi,Delhi,110020,07AAACF3456K1ZU,10,4.30,true
+11,Milton Hamilton Housewares,Nilesh Chheda,distributor@milton.in,+91 22 67007700,One BKC G-Block BKC,Mumbai,Maharashtra,400051,27AAACH9900H1ZR,6,4.55,true
+12,Local Artisans Cooperative,Kailash Chander,artisans.coop@gmail.com,+91 99999 00000,Gram Panchayat Office Sanganer,Jaipur,Rajasthan,302029,,14,3.20,true

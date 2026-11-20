@@ -1,0 +1,13 @@
+id,username,email,first_name,last_name,phone,role_id,is_active
+1,admin_rajesh,rajesh.sharma@stocksmart.in,Rajesh,Sharma,+91 98201 11223,1,true
+2,priya_mumbai_wh,priya.deshmukh@stocksmart.in,Priya,Deshmukh,+91 98202 22334,2,true
+3,amit_delhi_wh,amit.verma@stocksmart.in,Amit,Verma,+91 98111 33445,2,true
+4,sneha_blr_wh,sneha.rao@stocksmart.in,Sneha,Rao,+91 98450 44556,2,true
+5,vikram_store_bandra,vikram.mehta@stocksmart.in,Vikram,Mehta,+91 98203 55667,3,true
+6,ananya_store_cp,ananya.gupta@stocksmart.in,Ananya,Gupta,+91 98112 66778,3,true
+7,karthik_store_ind,karthik.iyer@stocksmart.in,Karthik,Iyer,+91 98451 77889,3,true
+8,deepa_store_tnagar,deepa.nair@stocksmart.in,Deepa,Nair,+91 98401 88990,3,true
+9,rohit_store_banjara,rohit.reddy@stocksmart.in,Rohit,Reddy,+91 98490 99001,3,true
+10,sunil_auditor,sunil.joshi@stocksmart.in,Sunil,Joshi,+91 98205 10203,4,true
+11,neha_procurement,neha.patel@stocksmart.in,Neha,Patel,+91 98791 21314,2,true
+12,rajesh_sharma_associate,rajesh.sharma2@stocksmart.in,Rajesh,Sharma,+91 98209 99999,3,true

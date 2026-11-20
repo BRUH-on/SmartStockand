@@ -1,0 +1,11 @@
+id,name,code,location_type,address,city,state,pincode,contact_phone,manager_name,is_active
+1,Central Fulfillment Hub Bhiwandi,WH-BHIW-01,WAREHOUSE,Building B-4 Logistic Park Mumbai-Nashik Expy,Bhiwandi,Maharashtra,421302,+91 2522 660100,Priya Deshmukh,true
+2,North Mega Distribution Center Gurugram,WH-GUR-01,WAREHOUSE,Shed 12 Pataudi Road Industrial Cluster,Gurugram,Haryana,122503,+91 124 4902000,Amit Verma,true
+3,South Logistics Park Whitefield,WH-BLR-01,WAREHOUSE,EPIP Zone Phase II Near ITPL,Bengaluru,Karnataka,560066,+91 80 41235500,Sneha Rao,true
+4,East Regional Depot Dankuni,WH-KOL-01,WAREHOUSE,NH-2 Highway Junction Dankuni Logistics Hub,Hooghly,West Bengal,712311,+91 33 26591100,Debabrata Mukherjee,true
+5,Flagship Retail Store Bandra West,STR-MUM-01,STORE,Hill Road Near Bandra Station West,Mumbai,Maharashtra,400050,+91 22 26401122,Vikram Mehta,true
+6,High Street Retail Store Connaught Place,STR-DEL-01,STORE,Block B Inner Circle Connaught Place,New Delhi,Delhi,110001,+91 11 23415566,Ananya Gupta,true
+7,Lifestyle Retail Store Indiranagar 100ft,STR-BLR-01,STORE,100 Feet Road HAL 2nd Stage Indiranagar,Bengaluru,Karnataka,560038,+91 80 25219988,Karthik Iyer,true
+8,Metro Retail Store T Nagar,STR-CHE-01,STORE,Pondy Bazaar T. Nagar,Chennai,Tamil Nadu,600017,+91 44 28153344,Deepa Nair,true
+9,Urban Store Banjara Hills Road 12,STR-HYD-01,STORE,Road No 12 Banjara Hills,Hyderabad,Telangana,500034,+91 40 23398877,Rohit Reddy,true
+10,Mall Outlet South City Mall,STR-KOL-01,STORE,Unit F-21 South City Mall Prince Anwar Shah Rd,Kolkata,West Bengal,700068,+91 33 40072211,Rituparna Roy,true
